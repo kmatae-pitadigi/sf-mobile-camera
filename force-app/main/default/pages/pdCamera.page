@@ -1,0 +1,18 @@
+<apex:page standardController="Test__c" extensions="pdCamera" showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+    <head>
+        <apex:slds />
+    </head>
+
+    <body class="slds-scope">
+        <div class="slds-grid slds-wrap">
+            <apex:form >
+                <div class="slds-col slds-size_12-of-12 slds-m-vertical_small">
+                    <apex:inputFile value="{!contentVersion.VersionData}" accept="image/*;capture=camera" filename="{!contentVersion.Title}" />
+                </div>
+                <div class="slds-col slds-size_12-of-12 slds-m-vertical_small">
+                    <apex:commandButton StyleClass="slds-button slds-button_brand slds-button_stretch" action="{!save}" value="投稿" />
+                </div>
+            </apex:form>
+        </div>
+    </body>
+</apex:page>
