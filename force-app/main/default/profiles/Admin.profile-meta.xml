@@ -4,6 +4,10 @@
         <apexClass>pdCamera</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>pdCamera_test</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <custom>false</custom>
     <layoutAssignments>
         <layout>Test__c-テストレイアウト</layout>
